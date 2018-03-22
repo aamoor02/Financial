@@ -1,0 +1,177 @@
+/*General Styling */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.main{
+	
+	flex:1;
+}
+
+ul{
+	list-style-type: none;
+	margin-right: 20px;
+	font-family: Tangerine, serif, sans-serif;
+}
+
+
+
+
+/*General Header style */
+header{
+	background-image:url('../img/money.jpg');
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: black 3px solid;
+	}
+	
+	
+/*header title and nav items */
+.name ,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+	
+}
+
+
+.name{
+	border: solid black .1em;
+	background-color: white;
+	color: black;
+	font-family: Tangerine, serif, sans-serif;
+	margin-left: .3em;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+ul li{
+	
+	border: black solid .1em;
+	margin-right: .3em;
+	background-color:white;
+	
+}
+
+/*Link styling in header */
+header a{
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*Link behavior In Header*/
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+	
+}
+
+
+}
+
+/*Section Style*/
+
+.row{
+	display: flex;
+	border-bottom: 3px black solid;
+	flex:1;
+	
+	
+}
+
+.col{
+	background-image: linear-gradient(black, white);
+	color: white;
+}
+
+.first{
+	display: block;
+	float: left;
+	color: green;
+	font-size: 3em;
+	line-height: .9em;
+	font-family: Tangerine, serif, sans-serif;
+	margin-right:.1em;
+}
+
+
+/* Newsletter Style */
+.newsletter{
+	display:flex;
+	height: 50px;
+	
+}
+.container{
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+button{
+	background-color:green;
+	color: white;
+	}
+button:hover{
+	
+}
+/*Footer style */
+.main-footer{
+	color: white;
+	padding: 1em 0;
+	background-image:linear-gradient(green, white);
+	text-align: center;
+	margin-top: 10px;
+}
+ 
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.main {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+	}
+
+
+	
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.col {
+		flex-basis: 0;
+	}
+
+	
+}
+
+
