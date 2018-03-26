@@ -1,4 +1,4 @@
-/*General styling */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -6,41 +6,41 @@ body {
 	width: 100%;
 }
 .row{
+	display: flex;
 	flex:1;
-}
-.col {
 	background-image: linear-gradient(grey, white);
+}
+
+ ul{
 	
 }
 
-.col p{
-	color: black;
+.row img{
+	border-radius: 50%;
+	margin-top: 10px;
 }
 
-.col h1{
-	color:green;
-	font-family: Tangerine, Times New Roman, serif;
+.contact{
+	margin-left:10px;
 }
 
-.primary{
-	padding-right:10px;
-}
 
-.secondary{
-	padding-left:10px;
-	padding-right:10px;
-}
-
-.tertiary{
-padding-right:10px;	
-}
-
-ul{
+.info{
 	list-style-type: none;
-	margin-right: 20px;
-	font-family: Tangerine, serif, sans-serif;
+	padding-right:10px;
+	font-size:2em;
+	color:green;
 }
 
+.first{
+	display: block;
+	float: left;
+	color: green;
+	font-size: 3em;
+	line-height: .9em;
+	font-family: Tangerine, serif, sans-serif;
+	margin-right:.1em;
+}
 
 /*General Header style */
 header{
@@ -51,6 +51,8 @@ header{
 	border-bottom: black 3px solid;
 	}
 	
+
+
 /*header title and nav items */
 .name ,
 .main-nav a {
@@ -76,32 +78,23 @@ header{
 	color: black;
 }
 
-ul li{
+.main-header ul li{
 	
 	border: black solid .1em;
 	margin-right: .3em;
 	background-color:white;
+	list-style-type: none;
+	margin-right: 20px;
+	font-family: Tangerine, serif, sans-serif;
 	
 }
+
 
 /*Link behavior In Header*/
 header a:hover{
 	color: #cccccc;
 	font-weight: bold;
-	
 }
-
-.first{
-	display: block;
-	float: left;
-	color: green;
-	font-size: 3em;
-	line-height: .9em;
-	font-family: Tangerine, serif, sans-serif;
-	margin-right:.1em;
-}
-
-
 
 
 /* Newsletter Style */
@@ -116,7 +109,7 @@ header a:hover{
 	display: flex;
 }
 
-#button{
+button{
 	background-color:green;
 	color: white;
 	}
@@ -129,7 +122,7 @@ header a:hover{
 	text-align: center;
 	margin-top: 10px;
 }
- 
+	
 	
 /* ================================= 
   Media Queries
@@ -161,6 +154,16 @@ header a:hover{
 		order: -1;
 	}
 
+}
+
+@media(max-width: 769px){
+	.services{
+		width: 100%;
+	}
+	.row {
+		flex-wrap: wrap;
+	}
+	
 }
 
 @media (min-width: 1025px) {

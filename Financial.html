@@ -5,56 +5,61 @@
 	<title>Financial Freedom</title>
 	<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/financial.css">
+	
 </head>
 <body>
 	
 	<header class="main-header">
-		<h1 class="name">Financial Freedom</h1>
+		<h1 class="name"><a href="#">Financial Freedom</a></h1>
 		<ul class="main-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="Financial.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Services.html">Services</a></li>
+			
 		</ul>
-		<div class="menu">
-                    <button id="navMenu" class="menu-button">Menu</button>
-                    <ul class="drop">
-                        <li><a href="#about-me">Home</a></li>
-                        <li><a href="#projects">Services</a></li>
-                        <li><a id="sign-up" href="#">Contact</a></li>
-                    </ul>
-		</div>
 	</header><!--/.main-header-->   
 
 
 	
-	<div class="main">		
-	 <div class="Primary col">
-		<h1>Achieve Financial Indepence</h1>
-		<p><span class="first">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-	and scrambled it to make a type specimen book.</p>
-     </div>
+	<div class="row">		
+		<div class="primary col">
+			<h1>Achieve Financial Independence</h1>
+			<p><span class="first">A</span>chieving financial Independence is a goal  everyone should aspire to. Defining what that exactly mean is going to be different for every person based on personal goals.
+			Generally a baseline can be set for this goal by having a positive net worth. Networth is defined as totalling all assets minus the total debts. Given the statistics
+			in the first section Americans are having a tough time achieving this goals. It can seem diffcult but this is definetely attainable. The first step is taking an honest
+			and sobering at ones finances and then determining what are the appropriate steps to paying down debt and positive cash flow. For those in debt it is often necessary to
+			change ones behavior and thought process with respect to money itself.
+			</p>
+		
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+			<h1>Debt is Systemic</h1>
+			<p><span class="first">D</span>ebt is a problem that many people are struggling with. It is an issue that affects everyone from the individual level all the way to the federal government.
+			The issue of debt is even worse when you factor in the savings rate for most Americans which is 5% of disposable income.  The federal Buereau of Economic Anaylsis
+			calculate this rate has fallen to 3.8 percent. Furthermore, 70% of Americans have less 1,000 dollars in case of an emergency. This compounds the problem because when
+			an emergency occurs other methods such as credit cards and payday loans are used to cover the balance. These forms of debt have high interest rates making an unfortunate
+			situation even worse. The average American household carrys 5,700$ with the average for balance-carrying households being 16,048$. Also, as of 2017 total outstanding
+			U.S consumer debt is 3.9 trillion.</p>
+		</div><!--/.secondary-->
+		
+		<div class="tertiary col">
+			<h1>80% head 20% Knowledge</h1>
+			<p><span class="first">Y</span> ou do not have to have a degree in finance or be some finance guru to get control of your financial situation. More often than not gaining controls of ones behaviors
+			is the most radical solution when it comes to money. This is mainly related to spending. Overspending or shelling out more money than you bring in is often the culprit 
+			when diagnosing financial problems. Changing your attitude with respect to spending and saving are essential to gaining control of your finances. You will have to educate yourself about finance as well. 
+			The important thing to remember is what you with that knowledge will have the most effect of your finances.</p>
+		</div><!--/.tertiary-->	
+	</div>
 	
-	 <div class="Secondary col">
-		<h1> Debt Is Systemic</h1>
-		<p><span class="first">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-		and scrambled it to make a type specimen book.</p>
-    </div>
-	
-	 <div class="Tertiary col">
-		<h1> 80% Behavior 20% Head</h1>
-		<p><span class="first">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-		and scrambled it to make a type specimen book.</p>
-    </div>
-	</div><!--main-->
-	 
-	 
 	<div class="newsletter">
 	 <div class = "container">
 		<form>
 		<input type="email" placeholder="Enter your email">
-		<button type="submit" class="button_1">Submit</button>
-		<p> Provide your email and sign up for our newsletter </p>
+		<button type="submit" id="button">Submit</button>
+		<h3> Provide your email and sign up for our newsletter </h3>
 		</form>
 	 </div>
     </div><!--newletter-->
@@ -66,6 +71,8 @@
 			<span>&copy;2018 Achieve Financial Freedom.</span>
 		</div>
 	</footer>
-	
+
+
+<script src="js/financial.js"></script> 	
 </body>
 </html>

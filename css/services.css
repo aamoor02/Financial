@@ -1,4 +1,4 @@
-/*General styling */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -6,34 +6,38 @@ body {
 	width: 100%;
 }
 .row{
+	display: flex;
 	flex:1;
-}
-.col {
-	background-image: linear-gradient(grey, white);
 	
 }
 
-.col p{
-	color: black;
-}
-
-.col h1{
-	color:green;
-	font-family: Tangerine, Times New Roman, serif;
-}
-
-.primary{
+.services{
+	background-image: linear-gradient(grey, white);
 	padding-right:10px;
-}
-
-.secondary{
 	padding-left:10px;
-	padding-right:10px;
 }
 
-.tertiary{
-padding-right:10px;	
+.services h1{
+	font-family:Tangerine, serif, sans-serif;
+	color: green;
+	
 }
+
+.services p{
+	font-size: 3em.
+}
+
+.interest{
+	background-image: linear-gradient(grey, white);
+	padding-left: 10px;
+	flex-grow: 2;
+}
+
+
+.interest h1{
+	font-family:Tangerine, serif, sans-serif;
+	color: green;
+	}
 
 ul{
 	list-style-type: none;
@@ -103,24 +107,32 @@ header a:hover{
 
 
 
+	
 
 /* Newsletter Style */
 .newsletter{
 	display:flex;
 	height: 50px;
-	
+	display: flex;
 }
 .container{
 	padding-bottom: 5px;
 	margin-bottom: 10px;
-	display: flex;
-}
+	}
+	
 
 #button{
 	background-color:green;
 	color: white;
 	}
 	
+#button2{
+	float:right;
+	margin-right:10px;
+	background-color:black;
+	color: white;
+	
+}	
 /*Footer style */
 .main-footer{
 	color: white;
@@ -142,6 +154,7 @@ header a:hover{
 	.row {
 		display: flex;
 	}
+	
 
 	.main-header {
 		flex-direction: column;
@@ -152,15 +165,23 @@ header a:hover{
 		flex: 1 50%;
 	}
 
-	.row {
-		flex-wrap: wrap;
-	}
-
+	
+	
 
 	.secondary {
 		order: -1;
 	}
 
+}
+
+@media(max-width: 769px){
+	.services{
+		width: 100%;
+	}
+	.row {
+		flex-wrap: wrap;
+	}
+	
 }
 
 @media (min-width: 1025px) {
