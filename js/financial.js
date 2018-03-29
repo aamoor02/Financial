@@ -16,4 +16,4 @@ myButton.addEventListener('mouseout', () => {
 //message displayed for click event
 myButton.addEventListener('click', () => {
   alert("Thank you for subscribing");
-});
+git });
