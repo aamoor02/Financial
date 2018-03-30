@@ -6,7 +6,7 @@ you on an individual level.
 
  Finance is one my passions. 
 
-
+Open index.html to view the homepage.
 
 
 Custom Css classes are:
